@@ -1,0 +1,10 @@
+FROM nginx:1.14
+
+# Copy config
+COPY demo-app/docker/dev/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Set default workdir to /app
+WORKDIR /app
+
+# Copy application source
+COPY . /app

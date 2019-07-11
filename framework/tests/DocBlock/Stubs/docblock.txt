@@ -1,0 +1,7 @@
+/**
+ * Example constructor.
+ * @param string $class
+ * @throws ReflectionException
+ * @Name\Space("value")
+ * @Name\Other\Space("2")
+ */

@@ -1,0 +1,4 @@
+FROM mariadb:10.4.6
+
+# Copy migration files
+COPY demo-app/migrations /docker-entrypoint-initdb.d

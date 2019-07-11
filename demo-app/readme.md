@@ -1,0 +1,6 @@
+- [X] As a Guest, I can view all posts
+- [x] As a Guest, I can create a new post
+- [X] As a Guest, I cannot create a post without title or content
+- [X] As a Guest, I cannot create a post where title contains digits
+- [X] As a Guest, I cannot create a post where content contains html
+- [] As a Guest, I can edit all posts

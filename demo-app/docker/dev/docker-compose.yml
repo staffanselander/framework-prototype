@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: ../../../
+      dockerfile: demo-app/docker/dev/Dockerfile-nginx
+    volumes:
+    - ../../../:/app:delegated
+    ports:
+    - 8080:80
+    depends_on:
+    - app
+
+  app:
+    build:
+      context: ../../../
+      dockerfile: demo-app/docker/dev/Dockerfile
+    volumes:
+    - ../../../:/app:delegated
+    depends_on:
+    - database
+
+  database:
+    build:
+      context: ../../../
+      dockerfile: demo-app/docker/dev/Dockerfile-mariadb
+    environment:
+      MYSQL_DATABASE: default
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
