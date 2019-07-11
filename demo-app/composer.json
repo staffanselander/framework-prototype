@@ -6,14 +6,7 @@
             "Selander\\Framework\\": "../framework/src/"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "../framework"
-        }
-    ],
     "require": {
-        "Selander/Framework": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.3"
