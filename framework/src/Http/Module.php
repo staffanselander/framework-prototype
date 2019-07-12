@@ -1,19 +1,14 @@
 <?php
 
 
-namespace Selander\Framework\Core\Modules;
+namespace Selander\Framework\Http;
 
 
 use Selander\Framework\Container\ContainerInterface;
 use Selander\Framework\Core\CoreModuleInterface;
-use Selander\Framework\Http\HeadersFactory;
-use Selander\Framework\Http\RequestFactory;
-use Selander\Framework\Http\RequestInterface;
-use Selander\Framework\Http\RequestVarsFactory;
-use Selander\Framework\Http\UrlFactory;
 use Selander\Framework\Support\GlobalVars;
 
-class HttpRequestModule implements CoreModuleInterface
+class Module implements CoreModuleInterface
 {
     /**
      * @var ContainerInterface

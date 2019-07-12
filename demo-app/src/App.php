@@ -22,7 +22,7 @@ class App
             /**
              * Framework Modules
              */
-            \Selander\Framework\Core\Modules\HttpRequestModule::class,
+            \Selander\Framework\Http\Module::class,
             \Selander\Framework\Router\Module::class,
             \Selander\Framework\Database\Module::class,
             \Selander\Framework\Template\Module::class,
